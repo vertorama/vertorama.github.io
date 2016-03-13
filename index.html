@@ -21,29 +21,20 @@
 <body oncontextmenu="return false">
 
     <div id="bg"><a href="#" class="nextImageBtn" title="next"></a><a href="#" class="prevImageBtn" title="previous"></a><img id="bgimg" src="img/~CloudyMorning.jpg" width="1680" height="1050" alt="Cloudy Morning" title="Cloudy Morning" /></div>
-
-    <div id="preloader"><img src="img/ajax-loader_dark.gif" width="32" height="32" /></div>
+    <div id="preloader"><img src="img/avt_camera_shutter.gif" width="64" height="64" /></div>
     <div id="img_title"></div>
     <div id="toolbar"><a href="#" title="Maximize" onclick="ImageViewMode('full');return false"><img src="img/toolbar_fs_icon.png" width="50" height="50" /></a></div>
     <div id="thumbnails_wrapper">
         <div id="outer_container">
             <div class="thumbScroller">
                 <div class="container">
-                    @*<?php
-                        $i=0;
-                        foreach (glob("img/~*.jpg") as $filename) {
-                                            //echo "$filename size " . filesize($filename) . "\n";
-                                            $title=str_replace(".jpg","",str_replace("img/~","",$filename));
-                                            $thumb=str_replace("img/~","img/thumb_~",$filename);
-                                            //echo "<div class='content'><div><a id='ref$i' href='$filename'><img id='img$i' src='$filename' style='height:50px;' title='$title' alt='$title' class='thumb' /></a></div></div>";
-                                            echo "<div class='content lazy'><div><a id='ref$i' href='$filename'><img id='img$i' src='$thumb' style='height:50px;'  title='$title' alt='$title' class='thumb' /></a></div></div>";
-
-                                            $i++;
-                                        }
-                                        ?>*@
-                    <!--  		<div class='content'><div><a id='ref$i' href='https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/88833041/de84f0cc1f8b46a446dd778ebdb42d79b40dd9a9/2048.jpg'><img id='img$i' src='https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/88833041/de84f0cc1f8b46a446dd778ebdb42d79b40dd9a9/2048.jpg' style='height:50px;'  title='$title' alt='$title' class='thumb' /></a></div></div> -->
-
-
+                    <div class='content lazy'><div><a id='ref1' href='img/~Atlantis.jpg'><img id='img1' src='img/thumb_~Atlantis.jpg' style='height:50px;' title='Atlantis' alt='Atlantis' class='thumb' /></a></div></div>
+                    <div class='content lazy'><div><a id='ref2' href='img/~ChamberOfCommerce.jpg'><img id='img2' src='img/thumb_~ChamberOfCommerce.jpg' style='height:50px;' title='Chamber Of Commerce' alt='Chamber Of Commerce' class='thumb' /></a></div></div>
+                    <div class='content lazy'><div><a id='ref3' href='img/~CloudyMorning.jpg'><img id='img3' src='img/thumb_~CloudyMorning.jpg' style='height:50px;' title='Cloudy Morning' alt='Cloudy Morning' class='thumb' /></a></div></div>
+                    <div class='content lazy'><div><a id='ref4' href='img/~Colosseo.jpg'><img id='img4' src='img/thumb_~Colosseo.jpg' style='height:50px;' title='Colosseo' alt='Colosseo' class='thumb' /></a></div></div>
+                    <div class='content lazy'><div><a id='ref5' href='img/~Oilrig.jpg'><img id='img4' src='img/thumb_~Oilrig.jpg' style='height:50px;' title='Oil Rig' alt='Oil Rig' class='thumb' /></a></div></div>
+                    <div class='content lazy'><div><a id='ref6' href='img/~SZRleft.jpg'><img id='img6' src='img/thumb_~SZRleft.jpg' style='height:50px;' title='Sheik Zayed at night' alt='Sheik Zayed at night' class='thumb' /></a></div></div>
+                    <div class='content lazy'><div><a id='ref7' href='img/~SZRsunset.jpg'><img id='img7' src='img/thumb_~SZRsunset.jpg' style='height:50px;' title='Sheik Zayed Sunset' alt='Sheik Zayed Sunset' class='thumb' /></a></div></div>
                 </div>
             </div>
         </div>
@@ -97,15 +88,15 @@
         });
     </script>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-64677475-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-64677475-8', 'auto');
+    ga('send', 'pageview');
 
     </script>
 </body>
