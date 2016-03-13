@@ -1,103 +1,3000 @@
+
 <!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
+ <!--<![endif]-->
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Adonis Tividad Photography">
-    <meta name="keywords" content="adonis,tividad,photography,programmer,developer,software,engineer,system,web">
+
+    <title>Adonis Tividad's Responsive Webpsite</title>
+
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Adonis Tividad's Responsive Webpsite" />
+    <meta name="keywords" content="adonis,tividad,photography,programmer,developer,software,engineer,system,web,c#,asp.net,microsoft,razor">
     <meta name="author" content="Adonis Villamor Tividad">
 
-    <title>Adonis Tividad Photography</title>
-    <link rel="shortcut icon" href="img/avticon.ico">
-    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> -->
-    <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.lazyload.js"></script>
-    <link rel="stylesheet" href="css/avt_standard.css">
-    <link rel="stylesheet" href="css/avt_slider.css">
-    <link rel="stylesheet" href="css/avt_menu_side.css">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!-- CSS | bootstrap -->
+    <!-- Credits: http://getbootstrap.com/ -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <!-- CSS | font-awesome -->
+    <!-- Credits: http://fortawesome.github.io/Font-Awesome/icons/ -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+
+    <!-- CSS | simple-line-icons -->
+    <!-- Credits: https://github.com/thesabbir/simple-line-icons -->
+    <link rel="stylesheet" type="text/css" href="css/simple-line-icons.min.css">
+
+    <!-- CSS | animate -->
+    <!-- http://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- CSS | prettyPhoto -->
+    <!-- Credits: http://www.no-margin-for-errors.com/ -->
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+
+    <!-- CSS | colors -->
+    <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+    <link rel="stylesheet" type="text/css" href="css/colors/color_2.css" id="colors-style" />
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" />
+
+    <!-- CSS | Style -->
+    <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Js | modernizr.js -->
+    <!-- Credits: http://modernizr.com -->
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+
+    <!-- CSS | Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/icons/font-awesome-ie7.min.css"/>
+    <![endif]-->
+    <style>
+        .my-duties {
+            font-size:1.1em;
+        }
+    </style>
 </head>
-<body oncontextmenu="return false">
 
-    <div id="bg"><a href="#" class="nextImageBtn" title="next"></a><a href="#" class="prevImageBtn" title="previous"></a><img id="bgimg" src="img/~CloudyMorning.jpg" width="1680" height="1050" alt="Cloudy Morning" title="Cloudy Morning" /></div>
-    <div id="preloader"><img src="img/avt_camera_shutter.gif" width="64" height="64" /></div>
-    <div id="img_title"></div>
-    <div id="toolbar"><a href="#" title="Maximize" onclick="ImageViewMode('full');return false"><img src="img/toolbar_fs_icon.png" width="50" height="50" /></a></div>
-    <div id="thumbnails_wrapper">
-        <div id="outer_container">
-            <div class="thumbScroller">
-                <div class="container">
-                    <div class='content lazy'><div><a id='ref1' href='img/~Atlantis.jpg'><img id='img1' src='img/thumb_~Atlantis.jpg' style='height:50px;' title='Atlantis' alt='Atlantis' class='thumb' /></a></div></div>
-                    <div class='content lazy'><div><a id='ref2' href='img/~ChamberOfCommerce.jpg'><img id='img2' src='img/thumb_~ChamberOfCommerce.jpg' style='height:50px;' title='Chamber Of Commerce' alt='Chamber Of Commerce' class='thumb' /></a></div></div>
-                    <div class='content lazy'><div><a id='ref3' href='img/~CloudyMorning.jpg'><img id='img3' src='img/thumb_~CloudyMorning.jpg' style='height:50px;' title='Cloudy Morning' alt='Cloudy Morning' class='thumb' /></a></div></div>
-                    <div class='content lazy'><div><a id='ref4' href='img/~Colosseo.jpg'><img id='img4' src='img/thumb_~Colosseo.jpg' style='height:50px;' title='Colosseo' alt='Colosseo' class='thumb' /></a></div></div>
-                    <div class='content lazy'><div><a id='ref5' href='img/~Oilrig.jpg'><img id='img4' src='img/thumb_~Oilrig.jpg' style='height:50px;' title='Oil Rig' alt='Oil Rig' class='thumb' /></a></div></div>
-                    <div class='content lazy'><div><a id='ref6' href='img/~SZRleft.jpg'><img id='img6' src='img/thumb_~SZRleft.jpg' style='height:50px;' title='Sheik Zayed at night' alt='Sheik Zayed at night' class='thumb' /></a></div></div>
-                    <div class='content lazy'><div><a id='ref7' href='img/~SZRsunset.jpg'><img id='img7' src='img/thumb_~SZRsunset.jpg' style='height:50px;' title='Sheik Zayed Sunset' alt='Sheik Zayed Sunset' class='thumb' /></a></div></div>
-                </div>
-            </div>
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Laoding page  -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
         </div>
     </div>
+    <!-- End Laoding page  -->
+    <!-- #wrappers -->
+    <div id="wrappers">
 
-    <div id="left_side">
-        <label id="author" class="font-large text-vertical">ADONIS&nbsp;&nbsp;TIVIDAD</label>
-        <span id="position_side" class="font-smallest color-title text-vertical">TRAVEL&nbsp;&nbsp;PHOTOGRAPHER</span>
-    </div>
-    <div id="top_left">
-        <span id="firstname" class="font-largest center">ADONIS</span>
-        <span id="lastname" class="font-largest center">TIVIDAD</span>
-        <span id="position" class="font-smallest color-title center">TRAVEL&nbsp;PHOTOGRAPHER</span>
+        <!-- #header -->
+        <header id="header">
 
-        <div class="nav-menu">
-            <nav>
-                <ul>
-                    <li id="home"><a class="active" href="#">HOME</a></li>
-                    <!-- 					<li id="favorites"><a href="#sec_favorites" >FAVORITES</a></li> -->
-                    <!-- 					<li id="landscapes"><a href="#sec_landscapes">LANDSCAPES</a></li> -->
-                    <!-- 					<li id="portraits"><a href="#sec_portraits">PORTRAITS</a></li> -->
-                    <li id="aboutme"><a href="#sec_aboutme">ABOUT ME</a></li>
-                    <!-- 					<li id="reachme"><a href="#sec_reachme">REACH ME</a></li> -->
+            <div class="menu_closed" id="menu_closed" title="Close Menu" data-toggle="tooltip">
+                <i class="fa fa-times"></i>
+            </div>
+
+            <div class="logo">
+                <a href="#"><img src="images/profile_img.jpg" width="122" height="122" alt="Logo"></a>
+            </div>
+
+            <h4 class="tagline">99% perspiration, 1% inspiration</h4>
+
+
+            <!-- .navigation -->
+            <nav class="navigation">
+                <ul class="list-unstyled">
+
+                    <li class="profile active">
+                        <a href="index.php#profile" class="profile link_menu"><i class="fa fa-user icon_menus"></i><span class="nav-label">profile</span></a>
+                    </li>
+                    <!-- <li class="service">
+                        <a href="index.php#service" class="service link_menu"><i class="fa fa-cog icon_menus"></i> <span class="nav-label">services</span></a>
+                    </li> -->
+                    <li class="resume">
+                        <a href="index.php#resume" class="resume link_menu"><i class="fa fa-tasks icon_menus"></i> <span class="nav-label">resume</span></a>
+                    </li>
+                    <li class="portfolio">
+                        <a href="index.php#portfolio" class="portfolio link_menu"><i class="fa fa-briefcase icon_menus"></i> <span class="nav-label">portfolio</span></a>
+                    </li>
+                    <!--<li class="blog">
+                        <a href="index.php#blog" class="blog link_menu"><i class="fa fa-bullhorn icon_menu"></i> <span class="nav-label">blog</span></a>
+                    </li> -->
+                    <li class="contact">
+                        <a href="index.php#contact" class="contact link_menu"><i class="fa fa-paper-plane icon_menus"></i> <span class="nav-label">contact</span></a>
+                    </li>
+
                 </ul>
             </nav>
+            <!-- End .navigation -->
+            <!-- #header_social_ul -->
+            <div class="social-ul" id="header_social_ul">
+                <ul>
+                    <li class="social-twitter"><a href="https://twitter.com/avtividad" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-facebook"><a href="https://www.facebook.com/adonis.tividad" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li class="social-google"><a href="https://plus.google.com/102169264857213859945" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="social-linkedin"><a href="https://www.linkedin.com/in/adonis-tividad-42410995" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="social-flickr"><a href="https://www.flickr.com/photos/adonistividad/" target="_blank" title="" data-toggle="tooltip" data-original-title="Flickr"><i class="fa fa-flickr"></i></a></li>
+                    <li class="social-500px"><a href="https://500px.com/adonistividad" target="_blank" title="" data-toggle="tooltip" data-original-title="500px"><i class="fa fa-500px"></i></a></li>
+                </ul>
+            </div>
+            <!-- End #header_social_ul -->
+            <!-- .copyright -->
+            <div class="copyright">
+                <p style="margin-bottom:0;">© 2016 by <a href="#">avtividad</a></p>
+            </div>
+            <!-- End.copyright -->
+
+        </header>
+        <!-- End #header -->
+        <!-- .header-main -->
+        <div class="header-main">
+            <div class="content_wrappers">
+                <div class="logo_wrapper">
+
+                    <span class="site_title">
+                        <a href="" title="Throne">
+                           <!-- <img src="images/logo-top.png" alt="FlexyBlog">-->
+                        </a>
+                    </span>
+
+                </div>
+
+                <a class="nav-btn menu_close" id="btn_open_menu" href="#"><i class="fa fa-bars"></i></a>
+
+            </div>
+
         </div>
-        <br />
-        <div class="social-media">
-            <a class="social-icons" href="tel:+971509608995" title="Phone" alt="Phone"><img src="img/icon-phone.png" /></a>
-            <a class="social-icons" href="mailto:avtividad@yahoo.com" title="Email" alt="Email"><img src="img/icon-email.png" /></a>
-            <a class="social-icons" href="https://www.facebook.com/adonis.tividad" title="Facebook" alt="Facebook"><img src="img/icon-fb.png" /></a>
-            <!-- 			<a class="social-icons" href="https://www.facebook.com/adonis.tividad" title="LinkedIn" alt="LinkedIn"><img src="img/icon-linkedin.png"/></a> -->
+        <!-- End .header-main -->
+        <!-- #main -->
+        <div id="main">
+
+            <!-- #profile -->
+            <section id="profile" class="layers page_current">
+
+                <h2 style="display:none">profile</h2>
+
+                <!-- .page_content -->
+                <div class="page_content">
+
+                    <!-- .block-header -->
+                    <div class="block-header">
+
+                        <!-- .my_profile -->
+                        <div class="row no-marg my_profile">
+
+                            <div class="col-xs-12 col-md-6 no-padd image_profile">
+                                <!--<div class="overfly"></div>-->
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 no-padd image_profile_resp">
+                                <div class="home_profile_resp">
+                                    <img src="images/profile_img.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <!-- .info_profile -->
+                            <div class="col-xs-12 col-md-6 no-padd info_profile">
+
+                                <!-- .bg_desc -->
+                                <div class="bg_desc clearfix">
+                                    <div class="inner-text">
+                                        <h2>Adonis Tividad</h2>
+                                        <small class="myjob">Software Developer</small>
+                                        <div class="feature-desc">
+                                            <p class="justify"><span>WHO I AM</span><br />I am that encircled guy in this page. Friends call me Don and a father of 1, traveller, nature lover, photography enthusiast and a pretty good software developer.</p><br />
+                                            <p class="justify"><span>MY PHILOSOPHY</span><br />Software Development is much more that creating a pretty application. Good system logic is purpose driven with measurable results. It should inspire, motivate and educate.</p><br />
+                                            <p class="justify"><span>GOALS</span><br />I guess my goal is to work somewhere where I can be challenged and develop something lasting. I think most people at their core want to do something that they are passionate about. This to me, takes precedence over a cushy position.</p><br />
+                                        </div>
+
+                                        <div class="signature text-right">
+                                            <div class="inner">
+                                                <img src="images/signature.png" alt="Signature">
+                                                <cite class="name">adonis tividad</cite>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .bg_desc -->
+                                <!-- .bg_info -->
+                                <div class="bg_info clearfix">
+                                    <div class="inner-text">
+                                        <ul>
+                                            <li class="user_name"><strong><i class="fa fa-user"></i>Name</strong> : adonis tividad</li>
+                                            <li><strong><i class="fa fa-calendar"></i>Birthdate</strong> : November 30, 1972</li>
+                                            <!-- <li><strong><i class="fa fa-phone"></i>Phone</strong> : +971 (50) 960-8995</li>-->
+                                            <li><strong><i class="glyphicon glyphicon-phone"></i>Mobile</strong> : +971 (50) 960-8995</li>
+                                            <li><strong><i class="fa fa-skype"></i>Skype</strong> : avtividad</li>
+                                            <li><strong><i class="fa fa-envelope"></i>Email</strong> : avtividad@yahoo.com</li>
+                                            <li><strong><i class="fa fa-globe"></i>Website</strong> : <a href="#" target="_blank">www.tividad.com</a></li>
+                                            <li><strong><i class="glyphicon glyphicon-map-marker"></i>Address</strong> : Salahuddin Road, Deira, Dubai, United Arab Emirates</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End .bg_info -->
+                                <!-- .header_social_ul -->
+                                <div class="social-ul bg_social" id="profile_social_ul">
+                                    <ul>
+                                        <li class="social-twitter"><a href="https://twitter.com/avtividad" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="social-facebook"><a href="https://www.facebook.com/adonis.tividad" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="social-google"><a href="https://plus.google.com/102169264857213859945" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                                        <li class="social-linkedin"><a href="https://www.linkedin.com/in/adonis-tividad-42410995" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="social-flickr"><a href="https://www.flickr.com/photos/adonistividad/" target="_blank" title="" data-toggle="tooltip" data-original-title="Flickr"><i class="fa fa-flickr"></i></a></li>
+                                        <li class="social-500px"><a href="https://500px.com/adonistividad" target="_blank" title="" data-toggle="tooltip" data-original-title="500px"><i class="fa fa-500px"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- End .header_social_ul -->
+
+                            </div>
+                            <!-- End .info_profile -->
+
+                        </div>
+                        <!-- End .my_profile -->
+
+                    </div>
+                    <!-- End .block-header -->
+
+                </div>
+                <!-- End .page_content -->
+
+            </section>
+            <!-- End #about -->
+            <!-- #service -->
+            <section id="service" class="layers">
+                <h2 style="display:none">service</h2>
+
+                <!-- .page_content -->
+                <div class="page_content">
+
+                    <!-- .container-fluid -->
+                    <div class="container-fluid no-marg">
+
+                        <!-- .row -->
+                        <div class="row row_responsive">
+
+                            <!-- .section_general -->
+                            <div class="col-lg-11 section_general">
+
+                                <header class="section-header">
+                                    <h3 class="section-title">Services - My Services</h3>
+                                    <p>Awesome & Creative Services For You</p>
+                                    <div class="border-divider"></div>
+                                </header>
+
+                                <!-- .service_intro -->
+                                <div class="row service_intro section_separate">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Our Principles</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+
+                                    <div class="col-md-6 para_serv">
+                                        <img src="images/services.jpg" class="img-responsive" alt="">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Mauris luctus imperdiet purus vel bibendum. Phasellus ultrices hendrerit mauris nec gravida.</p>
+
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+
+                                        <a href="#" class="btn btn_service_intro">read more</a>
+
+                                    </div>
+
+                                </div>
+                                <!-- End .service_intro -->
+                                <!-- service-1 -->
+                                <div class="row service_style_3 section_separate">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Our Services</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <div class="col-md-12 services_3">
+
+                                        <!-- col-md-4 -->
+                                        <div class="col-md-4 services_item">
+                                            <a href="#">
+                                                <img src="images/services1.jpg" alt="">
+                                            </a>
+
+                                            <h5>Why choose Us.</h5>
+
+                                            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+                                        </div>
+                                        <!-- end col-md-4 -->
+                                        <!-- col-md-4 -->
+                                        <div class="col-md-4 services_item">
+                                            <a href="#">
+                                                <img src="images/services3.jpg" alt="">
+                                            </a>
+
+                                            <h5>What we Do.</h5>
+
+                                            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+                                        </div>
+                                        <!-- end col-md-4 -->
+                                        <!-- col-md-4 -->
+                                        <div class="col-md-4 services_item">
+                                            <a href="#">
+                                                <img src="images/services2.jpg" alt="">
+                                            </a>
+
+                                            <h5>Our Mission.</h5>
+
+                                            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+                                        </div>
+                                        <!-- end col-md-4 -->
+
+                                    </div>
+
+                                </div>
+                                <!-- End service -->
+                                <!-- service-1 -->
+
+                                <div class="row section_separate">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Our Services 1</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="service-content">
+                                            <h3>Making Money</h3>
+                                            <p>Fusce quis interdum ipsum.Suspendi suscipit vehicula sapienid mattis. Lorem ipsum amet consectetur.</p>
+                                            <span class="service-icon"> <i class="fa fa-tag"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="service-content">
+                                            <h3>Easy to Customize</h3>
+                                            <p>Fusce quis interdum ipsum.Suspendi suscipit vehicula sapienid mattis. Lorem ipsum amet consectetur.</p>
+                                            <span class="service-icon"> <i class="fa fa-cogs"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="service-content">
+                                            <h3>Moving Let Us Help</h3>
+                                            <p>Fusce quis interdum ipsum.Suspendi suscipit vehicula sapienid mattis. Lorem ipsum amet consectetur.</p>
+                                            <span class="service-icon"> <i class="fa fa-arrows-alt"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End service-1 -->
+                                <!-- service-2 -->
+                                <div class="row section_separate services-wrapper">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Our Services 2</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <!-- service wrapper -->
+                                    <div class="col-md-4 col-sm-6 service-wrapper">
+                                        <div class="service service-2">
+                                            <div class="service-icon"><i class="fa fa-desktop"></i></div>
+                                            <div class="service-contents">
+                                                <h5 class="service-title"><a href="#">Web Design</a></h5>
+                                                <div class="border-divider"></div>
+                                                <p class="service-description">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End service wrapper -->
+                                    <!-- service wrapper -->
+                                    <div class="col-md-4 col-sm-6 service-wrapper">
+                                        <div class="service service-2">
+                                            <div class="service-icon"><i class="fa fa-mobile"></i></div>
+                                            <div class="service-contents">
+                                                <h5 class="service-title"><a href="#">App Development</a></h5>
+                                                <div class="border-divider"></div>
+                                                <p class="service-description">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End service wrapper -->
+                                    <!-- service wrapper -->
+                                    <div class="col-md-4 col-sm-6 service-wrapper">
+                                        <div class="service service-2">
+                                            <div class="service-icon"><i class="fa fa-heart-o"></i></div>
+                                            <div class="service-contents">
+                                                <h5 class="service-title"><a href="#">UX/UI DESIGN</a></h5>
+                                                <div class="border-divider"></div>
+                                                <p class="service-description">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End service wrapper -->
+
+                                </div>
+                                <!-- End service-2 -->
+                                <!-- service-3 -->
+                                <div class="row section_separate">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Our Services 3</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <!-- services -->
+                                    <div class="col-md-4 margin20">
+                                        <div class="services-box wow">
+                                            <div class="services-box-icon">
+                                                <i class="fa fa-pencil"></i>
+                                            </div>
+                                            <div class="services-box-info">
+                                                <h4>Web &amp; Graphics Design</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End services -->
+                                    <!-- services -->
+                                    <div class="col-md-4 margin20">
+                                        <div class="services-box wow">
+                                            <div class="services-box-icon">
+                                                <i class="fa fa-globe"></i>
+                                            </div><!--services icon-->
+                                            <div class="services-box-info">
+                                                <h4>Web Development</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End services -->
+                                    <!-- services -->
+                                    <div class="col-md-4 margin20">
+                                        <div class="services-box wow">
+                                            <div class="services-box-icon">
+                                                <i class="fa fa-users"></i>
+                                            </div><!--services icon-->
+                                            <div class="services-box-info">
+                                                <h4>Customer Support</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End services -->
+                                    <!-- services -->
+                                    <div class="col-md-4 margin20">
+                                        <div class="services-box wow">
+                                            <div class="services-box-icon">
+                                                <i class="fa fa-desktop"></i>
+                                            </div>
+                                            <div class="services-box-info">
+                                                <h4>Web Design</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End services -->
+                                    <!-- services -->
+                                    <div class="col-md-4 margin20">
+                                        <div class="services-box wow">
+                                            <div class="services-box-icon">
+                                                <i class="fa fa-mobile"></i>
+                                            </div>
+                                            <div class="services-box-info">
+                                                <h4>App Development</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End services -->
+                                    <!-- services -->
+                                    <div class="col-md-4 margin20">
+                                        <div class="services-box wow">
+                                            <div class="services-box-icon">
+                                                <i class="fa fa-heart-o"></i>
+                                            </div>
+                                            <div class="services-box-info">
+                                                <h4>UX/UI DESIGN</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End services -->
+
+                                </div>
+                                <!-- End service-3 -->
+                                <!-- service-4 -->
+                                <div class="row section_separate">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Our Services 4</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <div class="col-md-12">
+
+                                        <div class="panel-group" id="accordion">
+
+                                            <!-- panel-default -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapse_tabs">
+                                                            Web design service
+                                                            <i class="fa fa-plus" style="float: right;font-size: 11px; line-height: 16px;"></i>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Mauris luctus imperdiet purus vel bibendum. Phasellus ultrices hendrerit mauris nec gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End panel-default -->
+                                            <!-- panel-default -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapse_tabs">
+                                                            Easy to Customize
+                                                            <i class="fa fa-plus" style="float: right;font-size: 11px; line-height: 16px;"></i>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Mauris luctus imperdiet purus vel bibendum. Phasellus ultrices hendrerit mauris nec gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End panel-default -->
+                                            <!-- panel-default -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapse_tabs">
+                                                            Moving Let Us Help
+                                                            <i class="fa fa-plus" style="float: right;font-size: 11px; line-height: 16px;"></i>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Mauris luctus imperdiet purus vel bibendum. Phasellus ultrices hendrerit mauris nec gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End panel-default -->
+                                            <!-- panel-default -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapsefoor" class="collapse_tabs">
+                                                            Graphic design service
+                                                            <i class="fa fa-plus" style="float: right;font-size: 11px; line-height: 16px;"></i>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapsefoor" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Mauris luctus imperdiet purus vel bibendum. Phasellus ultrices hendrerit mauris nec gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End panel-default -->
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <!-- End service-4 -->
+                                <!-- service-5 -->
+                                <div class="row section_separate">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Our Services 5</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <div class="col-md-12">
+
+                                        <div role="tabpanel">
+
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active"><a href="#desktop" aria-controls="desktop" role="tab" data-toggle="tab"><i class="fa fa-desktop"></i>Web Design</a></li>
+                                                <li role="presentation"><a href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab"><i class="fa fa-globe"></i>Web Development</a></li>
+                                                <li role="presentation"><a href="#heart" aria-controls="heart" role="tab" data-toggle="tab"><i class="fa fa-heart-o"></i>DESIGN</a></li>
+                                                <li role="presentation"><a href="#users" aria-controls="users" role="tab" data-toggle="tab"><i class="fa fa-users"></i>Support</a></li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+
+                                                <div role="tabpanel" class="tab-pane fade active in" id="desktop">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem ipsum dolor color sit amet.</p>
+
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Mauris luctus imperdiet purus vel bibendum. Phasellus ultrices hendrerit mauris nec gravida.</p>
+                                                </div>
+
+                                                <div role="tabpanel" class="tab-pane fade" id="mobile">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem ipsum dolor color sit amet.</p>
+                                                </div>
+
+                                                <div role="tabpanel" class="tab-pane fade" id="heart">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem ipsum dolor color sit amet.</p>
+
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare quam et lorem luctus, et dapibus lectus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Mauris luctus imperdiet purus vel bibendum. Phasellus ultrices hendrerit mauris nec gravida.</p>
+                                                </div>
+
+                                                <div role="tabpanel" class="tab-pane fade" id="users">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem ipsum dolor color sit amet.</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- End service-5 -->
+                                <!-- pricing table -->
+                                <div class="row pricing-zoom section_separate">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Our Pricing</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="pricing">
+                                            <div class="pricing-head">
+                                                <h3>Standard <span>Ideal for Personal Websites </span></h3>
+                                                <h4><i>$</i>19<i>.99</i> <span>Per Month</span></h4>
+                                            </div>
+                                            <ul class="pricing-content list-unstyled">
+                                                <li><i class="fa fa-gift"></i> Free customisation </li>
+                                                <li><i class="fa fa-inbox"></i> 24 hour support</li>
+                                                <li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+                                                <li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+                                                <li><i class="fa fa-umbrella"></i> Online Protection</li>
+                                            </ul>
+                                            <div class="pricing-footer">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+                                                <a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="pricing active">
+                                            <div class="pricing-head">
+                                                <h3>Premium <span>Ideal for Personal Websites</span></h3>
+                                                <h4><i>$</i>29<i>.99</i> <span>Per Month</span></h4>
+                                            </div>
+                                            <ul class="pricing-content list-unstyled">
+                                                <li><i class="fa fa-gift"></i> Free customisation </li>
+                                                <li><i class="fa fa-inbox"></i> 24 hour support</li>
+                                                <li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+                                                <li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+                                                <li><i class="fa fa-umbrella"></i> Online Protection</li>
+                                            </ul>
+                                            <div class="pricing-footer">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+                                                <a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="pricing">
+                                            <div class="pricing-head">
+                                                <h3>Professional <span>Ideal for Personal Websites </span></h3>
+                                                <h4><i>$</i>39<i>.99</i><span>Per Month</span></h4>
+                                            </div>
+                                            <ul class="pricing-content list-unstyled">
+                                                <li><i class="fa fa-gift"></i> Free customisation </li>
+                                                <li><i class="fa fa-inbox"></i> 24 hour support</li>
+                                                <li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+                                                <li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+                                                <li><i class="fa fa-umbrella"></i> Online Protection</li>
+                                            </ul>
+                                            <div class="pricing-footer">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+                                                <a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- End pricing table -->
+                                <!-- testimonials -->
+                                <div class="row testimonials section_separate" style="margin-bottom:0">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Testimonials</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <div class="col-md-12 testimonials">
+                                        <div class="col-md-6 clearfix li-testimonials">
+                                            <img src="images/avatar/avatar1.jpg" class="img_testimonials" width="100" height="100" alt="">
+                                            <p>“Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
+                                            <span>Brewer Burks, <strong>UX Designer</strong></span>
+                                        </div>
+
+                                        <div class="col-md-6 clearfix li-testimonials">
+                                            <img src="images/avatar/avatar2.jpg" class="img_testimonials" width="100" height="100" alt="">
+                                            <p>“Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
+                                            <span>Rose Faithe, <strong>Co-Founder</strong></span>
+                                        </div>
+
+                                        <div class="col-md-6 clearfix li-testimonials last_testimonials">
+                                            <img src="images/avatar/avatar3.jpg" class="img_testimonials" width="100" height="100" alt="">
+                                            <p>“Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
+                                            <span>Jose Santonio, <strong>Marketing Director</strong></span>
+                                        </div>
+
+                                        <div class="col-md-6 clearfix li-testimonials last_testimonials">
+                                            <img src="images/avatar/avatar4.jpg" class="img_testimonials" width="100" height="100" alt="">
+                                            <p>“Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
+                                            <span>Pamela Travis, <strong>Assistant Coordinator</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End testimonials -->
+
+                            </div>
+                            <!-- End .section_general -->
+
+
+                        </div>
+                        <!-- End .row -->
+
+                    </div>
+                    <!-- End .container-fluid -->
+
+                </div>
+                <!-- End .page_content -->
+
+            </section>
+            <!-- End #service -->
+            <!-- #resume -->
+            <section id="resume" class="layers">
+                <h2 style="display:none">resume</h2>
+
+                <!-- page_content -->
+                <div class="page_content">
+
+                    <!-- .container-fluid -->
+                    <div class="container-fluid no-marg">
+
+                        <!-- .row -->
+                        <div class="row row_responsive">
+
+                            <!-- .section_general -->
+                            <div class="col-lg-11 section_general">
+
+                                <header class="section-header">
+                                    <h3 class="section-title">Adonis Tividad</h3>
+                                    <p>Software Developer</p>
+                                    <div class="border-divider"></div>
+                                </header>
+
+                                <div class="row section_separate">
+
+                                    <!-- .resume-left -->
+                                    <div class="col-md-6 resume-left">
+
+                                        <div class="title-section">
+                                            <h2 class="section_title">Experience</h2>
+                                            <div class="sep2"></div>
+                                        </div>
+
+                                        <!-- .attributes -->
+                                        <ul class="attributes">
+                                            <li class="first">
+                                                <h5>Software Developer <span class="duration"><i class="fa fa-calendar color"></i> 2015 - Present</span></h5>
+                                                <h6><span class="fa fa-briefcase"></span> MINDSPACE<span class="category"><i class="fa fa-tags color"></i> Information Technology / Advertising </span></h6>
+                                                <p>
+                                                    <ul class="my-duties">
+                                                        <li> Develop and implement software systems and applications to achieve corporate objectives</li>
+                                                        <li> Determines operational feasibility by evaluating analysis, problem definition, requirements, solution development, and proposed solutions.</li>
+                                                        <li> Apply theories of decision analysis to forecasting and linear programming</li>
+                                                        <li> Analyze current systems and create, test, implement, maintain and document programs through knowledge of the system-development cycle</li>
+                                                        <li> Prepares and installs solutions by determining and designing system specifications, standards, and programming.</li>
+                                                    </ul>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Software Developer <span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2014</span></h5>
+                                                <h6><span class="fa fa-briefcase"></span> CANWRX<span class="category"><i class="fa fa-tags color"></i> Consumer Services</span></h6>
+                                                <p>
+                                                    <ul class="my-duties">
+                                                        <li> Designs, develops, modifies, debugs and evaluates complex programs for functional areas.</li>
+                                                        <li> Analyzes existing programs or works to formulate logic for new systems, devises logic procedures, prepares flowcharting, performs coding, data analysis, and tests/debugs programs through the application of professional programming concepts.</li>
+                                                        <li> Provides analysis for the design and use complex relational databases.</li>
+                                                        <li> Develops conversion and system implementation plans.</li>
+                                                        <li> Recommends and implements changes in development, maintenance and system standards.</li>
+                                                    </ul>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Senior Software Developer <span class="duration"><i class="fa fa-calendar color"></i> 2008 - 2014</span></h5>
+                                                <h6><span class="fa fa-briefcase"></span> KITO ENTERPRISES<span class="category"><i class="fa fa-tags color"></i> Oil and Energy</span></h6>
+                                                <p>
+                                                    <ul class="my-duties">
+                                                        <li>Managed projects providing ERP system solutions, business mapping, process definition, data warehousing and customized IT solutions within Procurement Division of Kito Enterprises. Served as Project Leader for document management design and implementation.</li>
+                                                        <li>Lead and co-ordinate teams of information systems professionals in the development of software and integrated information systems, process control software and other embedded software control systems.</li>
+                                                        <li>Research, design, evaluate, integrate and maintain software applications, technical environments, operating systems, embedded software, information warehouses, and telecommunications software.</li>
+                                                        <li>Collect and document users' requirements and develop logical and physical specifications</li>
+                                                        <li>Research, evaluate and synthesize technical information to design, develop and test computer-based systems</li>
+                                                    </ul>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Senior Software Developer <span class="duration"><i class="fa fa-calendar color"></i> 2006 - 2008</span></h5>
+                                                <h6><span class="fa fa-briefcase"></span> SAIF TECHNOLOGIES<span class="category"><i class="fa fa-tags color"></i> Retail / Real Estate</span></h6>
+                                                <p>
+                                                    <ul class="my-duties">
+                                                        <li>Amalgamated with functional business areas and strategic leaders to plan and implement upgrades, enhancements, migrations, and deployments. Supported existing systems ensuring peak performances and uptime.</li>
+                                                        <li>Developed and implemented new use, administration, and support policies and procedures. Hired, trained, mentored, and evaluated staff.</li>
+                                                        <li>Perform business analysis and manage projects to specify, design and implement custom application software solutions.</li>
+                                                        <li>Performed key role in development technology for the company providing direct mail marketing systems to nationwide clientele. Provided version control management, functional documentation, and technical documents for products. Managed projects and integration testing.</li>
+                                                        <li>Conduct regular meetings with clients to clarify requirements and manage expectations.</li>
+                                                    </ul>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>IT Programmer<span class="duration"><i class="fa fa-calendar color"></i> 2005 - 2006</span></h5>
+                                                <h6><span class="fa fa-briefcase"></span> TAMCO MIDDLE EAST<span class="category"><i class="fa fa-tags color"></i> Manufacturing</span></h6>
+                                                <p>
+                                                    <ul class="my-duties">
+                                                        <li>Design and modify existing programs and data structures; provide for proper maintenance of assigned programs;</li>
+                                                        <li>Perform analysis and modification of existing programs and operations to meet changing needs and to provide for system enhancements.</li>
+                                                        <li>Design, program, code and analyze new computer programs and data structures in accordance with specifications and user needs, including screen formats and job control language procedures in accordance with programming standards.</li>
+                                                        <li>Assist other programmers with complex programming projects and needs; serve as Project Leader as assigned.</li>
+                                                        <li>Maintain file structures used in programs; maintain flow charts or narrative description of program flow, purpose and operation.</li>
+                                                    </ul>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>IT Department Head<span class="duration"><i class="fa fa-calendar color"></i> 2004 - 2005</span></h5>
+                                                <h6><span class="fa fa-briefcase"></span> PACIFIC SUN SOUTIONS<span class="category"><i class="fa fa-tags color"></i> Banking and Finance</span></h6>
+                                                <p>
+                                                    <ul class="my-duties">
+                                                        <li>Manage a team of software engineers of varying skill levels and train developers on best practices.</li>
+                                                        <li>Manage all phases of the software development life cycle.</li>
+                                                        <li>Closely monitor product development including line item sizing, tasking, scheduling, tracking and reporting.</li>
+                                                        <li>Managed software development and product definition for various banking systems. Designed MICR reader and scanner software from conception to installation within national locations. Developed procedures to standardized software development and release. Played key role in supporting software approval process of products developed.</li>
+                                                        <li>Managed and provided technical support for 200+ bank clients covering the entire archipelago of the Philippines</li>
+                                                    </ul>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Senior Programmer / Analyst<span class="duration"><i class="fa fa-calendar color"></i> 2003 - 2003</span></h5>
+                                                <h6><span class="fa fa-briefcase"></span> FUNCTIONAL INCORPORATED<span class="category"><i class="fa fa-tags color"></i> Banking and Finance</span></h6>
+                                                <p>
+                                                    <ul class="my-duties">
+                                                        <li>Supervises the work of other Programmer Analyst and Programmer positions; provides technical assistance, as required, to Programmer Analysts and other I.T. employees, capable of performing any function on installed systems.</li>
+                                                        <li>Functions as the Database Administrator. Has responsibility to define all databases and maintain accuracy and consistency in the data dictionary for all applications.</li>
+                                                        <li>Able to perform as a project leader of any project from definition to implementation; ability to manage both human and computer resources in a manner that project is verifiably accurate and on schedule.</li>
+                                                        <li>Works at the highest level of all technical phases of programming; requires a high degree of creative thinking and the ability to use the accumulated knowledge and experience of others.</li>
+                                                        <li>Critically reviews all programs prior to implementation to verify consistency and conformance with established departmental guidelines, policies and practices as well as industry standard guidelines; performs acceptance testing and program implementation for assigned systems and/or projects.</li>
+                                                    </ul>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Software Development Manager<span class="duration"><i class="fa fa-calendar color"></i> 1995 - 2003</span></h5>
+                                                <h6><span class="fa fa-briefcase"></span> PHILIPPINE SKYLANDERS<span class="category"><i class="fa fa-tags color"></i> Aviation / Warehousing</span></h6>
+                                                <p>
+                                                    <ul class="my-duties">
+                                                        <li>Lead and manage a team of developers to perform software development work within the defined scope of release requirements; including determining resource and skill set requirements for the development team.</li>
+                                                        <li>Develop, review, and approve software designs following industry practices and design patterns</li>
+                                                        <li>Follow and plan for industry trends including researching technology and proposing changes/enhancements</li>
+                                                        <li>Assist and enable business units to define and execute their strategic plans by clearly and simply articulating the capabilities of various technological solutions</li>
+                                                        <li>Demonstrate a software plan that meets the future needs of our commercial and government clients on technical challenges of industry demands</li>
+                                                    </ul>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <!-- /.attributes -->
+
+                                        <div class="title-section">
+                                            <h2 class="section_title">Education</h2>
+                                            <div class="sep2"></div>
+                                        </div>
+
+                                        <!-- .attributes -->
+                                        <ul class="attributes">
+                                            <li class="first">
+                                                <h5>Bachelor in Computer Science <span class="duration"><i class="fa fa-calendar color"></i> 1989 - 1993</span></h5>
+                                                <h6><span class="fa fa-book"></span> Technological University of the Philippines, Manila  </h6>
+                                            </li>
+                                            <li>
+                                                <h5>Diploma in Java Programming <span class="duration"><i class="fa fa-calendar color"></i> 2001 - 2001</span></h5>
+                                                <h6><span class="fa fa-book"></span> Genetic Computer School, Manila, Philippines </h6>
+                                            </li>
+                                        </ul>
+                                        <!-- /.attributes -->
+
+                                        <div class="title-section">
+                                            <h2 class="section_title">Acclamations / Awards</h2>
+                                            <div class="sep2"></div>
+                                        </div>
+
+                                        <!-- .attributes -->
+                                        <ul class="attributes">
+                                            <li class="first">
+                                                <h5>Team management excellence  <span class="duration"><i class="fa fa-calendar color"></i> 2005</span></h5>
+                                                <h6><span class="fa fa-trophy"></span> Pacific Sun Solutions</h6>
+                                            </li>
+                                            <li>
+                                                <h5>Editor’s Choice Award  <span class="duration"><i class="fa fa-calendar color"></i> 2012</span></h5>
+                                                <h6><span class="fa fa-trophy"></span> 500px.com</h6>
+                                                <p><a href="http://500px.com/photo/13476061/the-biker-by-adonis-tividad/" target="_blank" style="color:rgb(51, 51, 51);">The Biker</a> </p>
+                                            </li>
+
+                                        </ul>
+                                        <!-- /.attributes -->
+                                        <!-- .title_content -->
+                                        <div class="title-section">
+                                            <h2 class="section_title">Download my resume</h2>
+                                            <div class="sep2"></div>
+                                        </div>
+                                        <!-- /.title_content -->
+                                        <!-- .download_resume -->
+                                        <a class="download" href="docs/Adonis_Tividad_Resume.pdf">
+                                            <span data-hover="Download My Resume"><i class="fa fa-cloud-download"></i> Download My Resume</span>
+                                        </a>
+                                        <!-- /.download_resume -->
+
+                                    </div>
+                                    <!-- /.resume-left -->
+                                    <!-- .resume-right -->
+                                    <div class="col-md-6">
+
+                                        <!-- .title_content -->
+                                        <div class="title-section">
+                                            <h2 class="section_title">Programming skills</h2>
+                                            <div class="sep2"></div>
+                                        </div>
+                                        <!-- /.title_content -->
+
+                                        <div class="skills">
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="90%">
+                                                <div class="skillbar-title"><span>C# ASP.NET</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">90%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="90%">
+                                                <div class="skillbar-title"><span>HTML5 & CSS3 </span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">90%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="90%">
+                                                <div class="skillbar-title"><span>Javascript</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">90%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="89%">
+                                                <div class="skillbar-title"><span>LINQ</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">89%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="70%">
+                                                <div class="skillbar-title"><span>JAVA</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">70%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="60%">
+                                                <div class="skillbar-title"><span>PHP</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">60%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                        </div>
+
+                                        <!-- .title_content -->
+                                        <div class="title-section">
+                                            <h2 class="section_title">Databases</h2>
+                                            <div class="sep2"></div>
+                                        </div>
+                                        <!-- /.title_content -->
+
+                                        <div class="skills">
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="90%">
+                                                <div class="skillbar-title"><span>SQL Server</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">90%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix " data-percent="70%">
+                                                <div class="skillbar-title"><span>MySQL</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">70%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix " data-percent="60%">
+                                                <div class="skillbar-title"><span>Oracle</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">60%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix " data-percent="50%">
+                                                <div class="skillbar-title"><span>Postgre</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">50%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix " data-percent="60%">
+                                                <div class="skillbar-title"><span>SQLite</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">60%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                        </div>
+
+                                        <!-- .title_content -->
+                                        <div class="title-section">
+                                            <h2 class="section_title">Language skills</h2>
+                                            <div class="sep2"></div>
+                                        </div>
+                                        <!-- /.title_content -->
+
+                                        <div class="skills">
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="90%">
+                                                <div class="skillbar-title"><span>English</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">90%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix " data-percent="99%">
+                                                <div class="skillbar-title"><span>Tagalog</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">99%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                        </div>
+
+                                        <!-- .title_content -->
+                                        <div class="title-section">
+                                            <h2 class="section_title">Hobbies and interests</h2>
+                                            <div class="sep2"></div>
+                                        </div>
+                                        <!-- /.title_content -->
+
+                                        <div class="skills">
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="99%">
+                                                <div class="skillbar-title"><span>Photography</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">99%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="99%">
+                                                <div class="skillbar-title"><span>Programming</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">99%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix" data-percent="90%">
+                                                <div class="skillbar-title"><span>Reading</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">90%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix " data-percent="80%">
+                                                <div class="skillbar-title"><span>Travel</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">80%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+                                            <!-- .skillbar -->
+                                            <div class="skillbar clearfix " data-percent="80%">
+                                                <div class="skillbar-title"><span>Music</span></div>
+                                                <div class="skillbar-bar"></div>
+                                                <div class="skill-bar-percent">80%</div>
+                                            </div>
+                                            <!-- /.skillbar -->
+
+                                        </div>
+
+                                    </div>
+                                    <!-- /.resume-right -->
+
+                                </div>
+                                <!-- /.end row -->
+
+
+                                <!-- <div class="row no-marg section_separate" style="margin-bottom: 0;">
+
+                                    <div class="title-section">
+                                        <h2 class="section_title">Client reference</h2>
+                                        <div class="sep2"></div>
+                                    </div>
+
+                                    <div class="col-md-12" style="padding-left:0;padding-right:0">
+
+                                        <div class="reference clearfix">
+
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <img src="images/avatar/avatar6.jpg" class="img_reference" width="100" height="100" alt="">
+                                                    <p>“Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
+                                                    <span>Shelby Endicott, <strong>Assistant Coordinator</strong></span>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <img src="images/avatar/avatar9.jpg" class="img_reference" width="100" height="100" alt="">
+                                                    <p>“Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
+                                                    <span>Emily Madison, <strong>Secretary</strong></span>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <img src="images/avatar/avatar5.jpg" class="img_reference" width="100" height="100" alt="">
+                                                    <p>“Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
+                                                    <span>Chrissie Walter, <strong>Co-Founder</strong></span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>-->
+                                <!-- /.end row -->
+
+
+                            </div>
+                            <!-- End .section_general -->
+
+
+                        </div>
+                        <!-- End .row -->
+
+                    </div>
+                    <!-- End .container-fluid -->
+
+
+
+                </div>
+                <!-- End page_content -->
+
+            </section>
+            <!-- End #resume -->
+            <!-- #portfolio -->
+            <section id="portfolio" class="layers">
+                <h2 style="display:none">portfolio</h2>
+                <!-- .page_content -->
+                <div class="page_content">
+                    <!-- .portfolios -->
+                    <div id="portfolios" class="portfolios">
+
+                        <!-- .grid-wrap -->
+                        <div class="grid-wrap">
+
+                            <!-- #filters -->
+                            <ul id="genre-filter" class="clearfix">
+                                <li class="label_filter">Filter</li>
+                                <li><span class="filter active" data-filter="programming photography">All</span></li>
+                                <li><span class="filter" data-filter="programming">Programming</span></li>
+                                <li><span class="filter" data-filter="photography">Photography</span></li>
+                            </ul>
+                            <!-- /#filters -->
+                            <!-- #portfolioslist -->
+                            <div class="grid" id="portfoliolist">
+
+
+                                <div class="view view-first portfolio programming" data-cat="programming">
+
+                                    <img src="images/portfolio/thumb/portfolio-01-349x232.jpg" alt="img02" />
+
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+                                        <h4>Mauble</h4>
+                                        <p><span class="cat-portfolio">Programming</span></p>
+
+                                        <div class="portf_detail">
+                                            <a href="images/portfolio/portfolio-01.jpg" data-gal="portfolio" class="info open-imag">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+
+                                            <a href="#" class="info external open_port_detail" data-id="1">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="view view-first portfolio programming" data-cat="programming">
+
+                                    <img src="images/portfolio/thumb/portfolio-02-349x232.jpg" alt="img02" />
+
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+                                        <h4>Resumeze</h4>
+                                        <p><span class="cat-portfolio">Programming</span></p>
+
+                                        <div class="portf_detail">
+                                            <a href="images/portfolio/portfolio-02.jpg" data-gal="portfolio" class="info open-imag">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+
+                                            <a href="#" class="info external open_port_detail" data-id="2">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="view view-first portfolio photography" data-cat="photography">
+
+                                    <img src="images/portfolio/thumb/portfolio-03-349x232.jpg" alt="img02" />
+
+                                    <div class="mask" style="background-color: rgba(157, 53, 33, 0.7);">
+                                        <h4>The Biker</h4>
+                                        <p><span class="cat-portfolio">Photography</span></p>
+
+
+                                        <div class="portf_detail">
+                                            <a href="images/portfolio/portfolio-03.jpg" data-gal="portfolio" class="info open-imag">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+
+                                            <a href="#" class="info external open_port_detail" data-id="3">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="view view-first portfolio photography" data-cat="photography">
+                                    <img src="images/portfolio/thumb/portfolio-04-349x232.jpg" alt="img02" />
+                                    <div class="mask" style="background-color: rgba(252, 110, 81, 0.7);">
+                                        <h4>Waiting</h4>
+                                        <p><span class="cat-portfolio">Photography</span></p>
+
+                                        <div class="portf_detail">
+                                            <a href="images/portfolio/portfolio-04.jpg" data-gal="portfolio" class="info open-imag">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                            <!-- <a href="http://vimeo.com/7449107" data-gal="portfolio" class="info external"><i class="fa fa-play"></i></a>-->
+                                            <a href="#" class="info external open_port_detail" data-id="4">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="view view-first portfolio programming photography" data-cat="programming photography">
+
+                                    <img src="images/portfolio/thumb/portfolio-05-349x232.jpg" alt="img02" />
+
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+                                        <h4>Vertorama</h4>
+                                        <p><span class="cat-portfolio">Programming / Photography</span></p>
+
+                                        <div class="portf_detail">
+                                            <a href="images/portfolio/portfolio-05.jpg" data-gal="portfolio" class="info open-imag">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+
+                                            <a href="#" class="info external open_port_detail" data-id="5">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div><!-- /portfoliolist -->
+
+                        </div><!-- /grid-wrap -->
+
+                    </div><!-- /portfolios -->
+
+                </div>
+                <!-- .page_content -->
+
+
+
+            </section>
+            <!-- End #portfolio -->
+            <!-- #portfolio_single -->
+            <div class="overlay_single_portfolio active">
+
+                <div class="single-portfolio" data-id="1">
+                    <div class="fc-page-title-breadcrumbs">
+
+                        <div class="fc-page-title">
+                            <div class="fc-page-title-wrapper">
+
+                                <div class="fc-page-title-captions">
+                                    <h1 class="entry-title">MAUBLE - Website for the millions.</h1>
+                                </div>
+
+                                <a class="btn_close_port" href="#"><i class="fa fa-close"></i></a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row no-marg">
+                        <div class="col-md-12 post-image-wrap">
+                            <img src="images/portfolio/portfolio-01.jpg" alt="" />
+                        </div>
+                    </div>
+
+
+                    <div class="content row no-marg">
+                        <div class="col-md-8 content-split portfolio-split">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Description</h2>
+                                <div class="sep2"></div>
+                            </div>
+                            <p><b>Mauble</b> is a free simple website builder that allows small businesses and everyday people to make websites online without knowing how to code.</p>
+
+                            <p><b>Responsive Design</b> - Responsive mobile-friendly websites that look great on any tablet, phone or desktop.</p>
+
+                            <p><b>Mobile Website Builder</b> - Mobile Site Builder for creating mobiles sites with drag and drop ease.</p>
+
+                            <p><b>Drag and Drop</b> - Point, click, drag and drop. Quickly build your awesome website without editing code.</p>
+
+                        </div>
+
+                        <div class="col-md-4 sidebar portfolio-sidebar">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Details</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <div><strong>Date : </strong><span class="project-terms">June 29, 2015</span></div>
+                            <div><strong>Client : </strong><span class="project-terms">Mindspace</span></div>
+                            <div><strong>Category : </strong><a href="#">Web Application</a> / <a href="#">Corporate</a></div>
+                            <div><strong>Skills Used : </strong><a href="#">C# ASP.Net</a> / <a href="#">HTML5 / CSS3</a> / <a href="#">Javascript</a></div>
+                            <div><strong>Url : </strong><a href="http://www.mauble.com" target="_blank">www.mauble.com</a></div>
+
+
+
+                            <hr>
+
+                            <div class="portfolio-nav">
+                                <ul>
+                                    <li class="prev-link hide_prev"><a href="#" data-post="0" rel="Next" title="next"><i class="fa fa-angle-left icon-single"></i></a></li>
+                                    <li class="all-items"><a href="#" title="All"><i class="fa fa-th-large icon-single"></i></a></li>
+                                    <li class="next-link"><a href="#" data-post="2" rel="Prev" title="prev"><i class="fa fa-angle-right icon-single"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- post 2 -->
+                <div class="single-portfolio" data-id="1">
+                    <div class="fc-page-title-breadcrumbs">
+
+                        <div class="fc-page-title">
+                            <div class="fc-page-title-wrapper">
+
+                                <div class="fc-page-title-captions">
+                                    <h1 class="entry-title">Resumeze - your interactive career timeline</h1>
+                                </div>
+
+                                <a class="btn_close_port" href="#"><i class="fa fa-close"></i></a>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row no-marg">
+                        <div class="col-md-12 post-image-wrap">
+                            <img src="images/portfolio/portfolio-02.jpg" alt="" />
+                        </div>
+                    </div>
+
+
+                    <div class="content row no-marg">
+                        <div class="col-md-8 content-split portfolio-split">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Description</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <p><b>Resumeze</b> is an interactive career timeline. A simple, yet robust way of creating a responsive resume.</p>
+
+                        </div>
+
+                        <div class="col-md-4 sidebar portfolio-sidebar">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Details</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <div><strong>Date : </strong><span class="project-terms">March 01, 2016</span></div>
+                            <div><strong>Client : </strong><span class="project-terms">Mindspace</span></div>
+                            <div><strong>Category : </strong><a href="#">Website</a> / <a href="#">Corporate</a></div>
+                            <div><strong>Skills Used : </strong><a href="#">C# ASP.Net</a> / <a href="#">HTML5 / CSS3</a> / <a href="#">Javascript</a></div>
+                            <div><strong>Url : </strong><a href="http://www.mauble.space" target="_blank">www.resumeze.com</a></div>
+
+
+
+                            <hr>
+
+                            <div class="portfolio-nav">
+                                <ul>
+                                    <li class="prev-link"><a href="#" data-post="1" rel="Next" title="next"><i class="fa fa-angle-left icon-single"></i></a></li>
+                                    <li class="all-items"><a href="#" title="All"><i class="fa fa-th-large icon-single"></i></a></li>
+                                    <li class="next-link"><a href="#" data-post="3" rel="Prev" title="prev"><i class="fa fa-angle-right icon-single"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- End post 2 -->
+                <!-- post 3 -->
+                <div class="single-portfolio" data-id="3">
+                    <div class="fc-page-title-breadcrumbs">
+
+                        <div class="fc-page-title">
+                            <div class="fc-page-title-wrapper">
+
+                                <div class="fc-page-title-captions">
+                                    <h1 class="entry-title">The Biker</h1>
+                                </div>
+
+                                <a class="btn_close_port" href="#"><i class="fa fa-close"></i></a>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row no-marg">
+                        <div class="col-md-12 post-image-wrap">
+                            <img src="images/portfolio/portfolio-03.jpg" alt="" />
+                        </div>
+                    </div>
+
+
+                    <div class="content row no-marg">
+                        <div class="col-md-8 content-split portfolio-split">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Description</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <p><b>The Biker</b> is one of the top 500px Editor’s Choice Awards. Patiently waited and taken in a pedestrian underpass. </p>
+
+
+                        </div>
+
+                        <div class="col-md-4 sidebar portfolio-sidebar">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Details</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <div><strong>Date : </strong><span class="project-terms">Sept 27, 2012</span></div>
+                            <div><strong>Client : </strong><span class="project-terms">500px</span></div>
+                            <div><strong>Category : </strong><a href="#">Photography</a></div>
+                            <div><strong>Tools Used : </strong><a href="#">NIKON D5100</a></div>
+                            <div><strong>Settings : </strong><a href="#">22mm | &#402;/4 | 1/50s | ISO 400</a></div>
+                            <div><strong>Url : </strong><a href="https://500px.com/photo/13476061/the-biker-by-adonis-tividad" target="_blank">500px.com</a></div>
+
+
+
+                            <hr>
+
+                            <div class="portfolio-nav">
+                                <ul>
+                                    <li class="prev-link"><a href="#" data-post="2" rel="Next" title="next"><i class="fa fa-angle-left icon-single"></i></a></li>
+                                    <li class="all-items"><a href="#" title="All"><i class="fa fa-th-large icon-single"></i></a></li>
+                                    <li class="next-link"><a href="#" data-post="4" rel="Prev" title="prev"><i class="fa fa-angle-right icon-single"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- End post 3 -->
+                <!-- post 4 -->
+                <div class="single-portfolio" data-id="4">
+                    <div class="fc-page-title-breadcrumbs">
+
+                        <div class="fc-page-title">
+                            <div class="fc-page-title-wrapper">
+
+                                <div class="fc-page-title-captions">
+                                    <h1 class="entry-title">Waiting</h1>
+                                </div>
+
+                                <a class="btn_close_port" href="#"><i class="fa fa-close"></i></a>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row no-marg">
+                        <div class="col-md-12 post-image-wrap">
+                            <img src="images/portfolio/portfolio-04.jpg" alt="" />
+                        </div>
+                    </div>
+
+
+                    <div class="content row no-marg">
+                        <div class="col-md-8 content-split portfolio-split">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Description</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <p><b>Waiting</b> is one the HIPA's "Life in colour" finalists in General Category. </p>
+                            <p><b>Hamdan International Photography Award (HIPA)</b> - is an international photographic award, founded in 2011 under the patronage of crown prince of Dubai Sheikh Hamdan bin Rashid bin Mohammed al Maktoum. The annual total prize money $400000 (US Dollars, in 2013 total prize money was $389000) - the largest monetary prize among photographic awards. The award is open to anyone. In the first season of competition, 5,600 photographers were involved from 99 countries, in the second (2012-2013) - 19 thousand people from 121 countries.</p>
+
+
+                        </div>
+
+                        <div class="col-md-4 sidebar portfolio-sidebar">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Details</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <div><strong>Date : </strong><span class="project-terms">March 16, 2015</span></div>
+                            <div><strong>Client : </strong><span class="project-terms">HIPA</span></div>
+                            <div><strong>Category : </strong><a href="#">Photography</a></div>
+                            <div><strong>Tools Used : </strong><a href="#">Canon 5D mark III</a></div>
+                            <div><strong>Settings : </strong><a href="#">22mm | &#402;/4 | 1/50s | ISO 400</a></div>
+                            <div><strong>Url : </strong><a href="http://www.hipa.ae/en/media/gallery/18#imageGallery[20]/186/" target="_blank">hipa.ae</a></div>
+
+
+
+                            <hr>
+
+                            <div class="portfolio-nav">
+                                <ul>
+                                    <li class="prev-link"><a href="#" data-post="3" rel="Next" title="next"><i class="fa fa-angle-left icon-single"></i></a></li>
+                                    <li class="all-items"><a href="#" title="All"><i class="fa fa-th-large icon-single"></i></a></li>
+                                    <li class="next-link"><a href="#" data-post="5" rel="Prev" title="prev"><i class="fa fa-angle-right icon-single"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- End post 4 -->
+                <!-- post 5 -->
+                <div class="single-portfolio" data-id="1">
+                    <div class="fc-page-title-breadcrumbs">
+
+                        <div class="fc-page-title">
+                            <div class="fc-page-title-wrapper">
+
+                                <div class="fc-page-title-captions">
+                                    <h1 class="entry-title">Vertorama - Travel Photography</h1>
+                                </div>
+
+                                <a class="btn_close_port" href="#"><i class="fa fa-close"></i></a>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row no-marg">
+                        <div class="col-md-12 post-image-wrap">
+                            <img src="images/portfolio/portfolio-05.jpg" alt="" />
+                        </div>
+                    </div>
+
+
+                    <div class="content row no-marg">
+                        <div class="col-md-8 content-split portfolio-split">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Description</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <p><b>Vertorama</b> is a personal travel photography site.</p>
+                            <p>A <b>Vertorama</b> is a vertical assembly of two or more photographs. Most of the time, an assembly is made ??up of pictures taken with a wide angle lens.
+                            The result is a classic image of the closest size square format, on which we find a sense of space both in width and in height.</p>
+
+                        </div>
+
+                        <div class="col-md-4 sidebar portfolio-sidebar">
+
+                            <div class="title-section" style="margin-left: 0;">
+                                <h2 class="section_title">Project Details</h2>
+                                <div class="sep2"></div>
+                            </div>
+
+                            <div><strong>Date : </strong><span class="project-terms">October 18, 2015</span></div>
+                            <div><strong>Client : </strong><span class="project-terms">Myself</span></div>
+                            <div><strong>Category : </strong><a href="#">Website</a> / <a href="#">Personal</a></div>
+                            <div><strong>Skills Used : </strong><a href="#">HTML5 / CSS3</a> / <a href="#">Javascript</a></div>
+                            <div><strong>Url : </strong><a href="http://www.vertorama.com" target="_blank">www.vertorama.com</a></div>
+
+
+
+                            <hr>
+
+                            <div class="portfolio-nav">
+                                <ul>
+                                    <li class="prev-link"><a href="#" data-post="4" rel="Next" title="next"><i class="fa fa-angle-left icon-single"></i></a></li>
+                                    <li class="all-items"><a href="#" title="All"><i class="fa fa-th-large icon-single"></i></a></li>
+                                    <li class="next-link hide_next"><a href="#" rel="Prev" title="prev"><i class="fa fa-angle-right icon-single"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- End post 5 -->
+
+
+            </div>
+            <!-- End #portfolio_single -->
+            <!-- #blog -->
+            <section id="blog" class="layers blog-content-grid">
+                <h2 style="display:none">blog</h2>
+                <!-- .page_content -->
+                <div class="page_content">
+
+                    <!-- .row -->
+                    <div class="row row_responsive">
+
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_1-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_2-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-music-tone-alt"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_3-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-social-youtube"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_4-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_5-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-music-tone-alt"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_6-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_7-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_8-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-social-youtube"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_9-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-music-tone-alt"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_10-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-music-tone-alt"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_11-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-music-tone-alt"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_12-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_13-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_14-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-music-tone-alt"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_15-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-pencil"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_16-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_17-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_18-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-pencil"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_19-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-social-youtube"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_20-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+                        <!-- post -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <article>
+
+                                <div class="post-thumb">
+                                    <a href="#" class="image-link">
+                                        <img src="images/blog/grid_21-333x222.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="post-body">
+
+                                    <h3 class="post-title"><a href="#">Awesome Post Title</a></h3>
+
+                                    <div class="post-meta">
+
+                                        <ul>
+                                            <li><i class="icon-user"></i>by : <a href="#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-clock"></i>January 18, 2015</li>
+                                            <li class="separate_li">|</li>
+                                            <li><i class="icon-folder"></i><a href="#" rel="category tag" class="categ_post">WordPress</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="post-content">
+                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                    </div>
+
+                                    <a href="#" class="read_more_but">Continue Reading</a>
+
+                                    <div class="footer_post">
+                                        <ul>
+                                            <li><i class="icon-picture"></i></li>
+                                            <li><i class="icon-bubble"></i> <a href="#">4</a></li>
+                                            <li><i class="icon-heart"></i> <a href="#">35</a></li>
+                                            <li><i class="icon-eye"></i> 216</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <!-- //post -->
+
+                    </div>
+
+                    <div class="main-pagination">
+                        <span class="page-numbers current">1</span>
+                        <a class="page-numbers" href="#">2</a>
+                        <a class="page-numbers" href="#">3</a>
+                        <a class="page-numbers" href="#">4</a>
+                        <a class="next page-numbers" href="#">
+                            <span class="visuallyhidden">Next</span><i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+            </section>
+            <!-- End #blog -->
+            <!-- #contact -->
+            <section id="contact" class="layers">
+
+                <h2 style="display:none">contact</h2>
+
+                <!-- .page_content -->
+                <div class="page_content">
+
+                    <!-- #contact -->
+                    <div id="contacts">
+
+                        <div id="mapContainer">
+
+                            <div id="tabs" class="tab_close" title="" data-toggle="tooltip" data-original-title="Send Message">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+
+                            <div id="tabs_resp" class="tab_close" title="" data-toggle="tooltip" data-original-title="Send Message">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+
+                            <div id="map_canvas"></div>
+                        </div>
+
+
+                        <div id="contentContact" class="two">
+
+                            <div class="contact_closed" id="contact_closed" title="Close Contact" data-toggle="tooltip">
+                                <i class="fa fa-times"></i>
+                            </div>
+
+                            <div class="innerpadding">
+
+                                <div class="separte-content">
+                                    <h2>Let’s be social</h2>
+
+                                    <!-- social-ul -->
+                                    <div class="social-ul" id="contact_social_ul">
+                                        <ul>
+                                            <li class="social-twitter"><a href="https://twitter.com/avtividad" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="social-facebook"><a href="https://www.facebook.com/adonis.tividad" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="social-google"><a href="https://plus.google.com/102169264857213859945" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                                            <li class="social-linkedin"><a href="https://www.linkedin.com/in/adonis-tividad-42410995" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                            <li class="social-flickr"><a href="https://www.flickr.com/photos/adonistividad/" target="_blank" title="" data-toggle="tooltip" data-original-title="Flickr"><i class="fa fa-flickr"></i></a></li>
+                                            <li class="social-500px"><a href="https://500px.com/adonistividad" target="_blank" title="" data-toggle="tooltip" data-original-title="500px"><i class="fa fa-500px"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- End social-ul -->
+                                </div>
+
+
+                                <div class="separte-content">
+                                    <!-- Send a Message -->
+                                    <h2>Send a Message</h2>
+
+                                    <div id="contact-status"></div>
+
+                                    <form action="#" id="contactform" class="contact-form">
+
+                                        <div class="row form-group">
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-name">
+                                                <i class="fa fa-user icon-contact"></i>
+                                                <input type="text" name="name" class="form-control name-contact" style="margin-top: 0;" placeholder="Name..." />
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-email">
+                                                <i class="fa fa-envelope icon-contact"></i>
+                                                <input type="text" name="email" class="form-control email-contact" placeholder="Email..." />
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-subject">
+                                                <i class="fa fa-question icon-contact"></i>
+                                                <input type="text" name="subject" class="form-control subject-contact" placeholder="Subject..." />
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group" id="contact-message">
+                                                <i class="fa fa-comments icon-contact"></i>
+                                                <textarea name="message" cols="90" rows="10" class="form-control message-contact" id="inputError" placeholder="Message..."></textarea>
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group" style="margin-bottom: 0;">
+                                                <button type="submit" class="btn btn-block btn-cta btn-cta-contact-2">Send<i class="fa fa-angle-right"></i></button>
+                                            </div>
+
+                                        </div><!--//row-->
+
+                                    </form><!--//contact-form-->
+                                    <!-- End Send a Message -->
+
+                                </div>
+
+
+                                <div class="collapser">
+
+                                    <h2>other way</h2>
+
+                                    <ul class="info_contact">
+                                        <li><span><i class="fa fa-map-marker"></i></span> Salahuddin Road, Deira, Dubai, UAE </li>
+                                        <!-- <li><span><i class="fa fa-phone"></i></span> +971-50-960-8995</li>-->
+                                        <li><span><i class="glyphicon glyphicon-phone"></i></span> +971-50-960-8995</li>
+                                        <li><span><i class="fa fa-envelope"></i></span> avtividad@yahoo.com</li>
+                                        <li><span><i class="fa fa-globe"></i></span> <a href="#">www.tividad.com</a></li>
+                                    </ul>
+
+
+                                </div>
+
+
+                            </div>
+
+                            <!-- end .innerpadding -->
+
+                        </div>
+                        <!-- end #contentContact -->
+
+                    </div>
+                    <!-- #contact -->
+
+                </div>
+                <!-- .page_content -->
+
+            </section>
+            <!-- End #contact -->
+
         </div>
+        <!-- End #main -->
     </div>
-    <div id="sec_aboutme" class="section">
-        <a class="section-close" title="Close" alt="close"><img src="img/close.png" /></a>
-        <span class="font-medium color-title">ABOUT ME</span>
-        <p>Being a photographer is totally awesome. There are many reasons why but I will share with you my top 3 or 3 reasons why I am a photographer.</p><br />
-        <p>First, I wanted to capture a memory that I can have forever. In the case of my only son and only child whom my wife and I were blessed after eight long years, to capture the memories of Auric's growing years through photography became a passion. Every smile, every tear, every laughter, at play or asleep, all these and more is a moment that will pass but will forever be retained.</p><br />
-        <p>Secondly, I appreciate the beauty that is all around me. Everyday is filled with it in the most ordinary or unexpected places, from the most simple creation of God to the most complex ones. It is the awesomeness and greatness of God that has inspired me to capture his work of art.</p><br />
-        <p>Thirdly, I lose all my worries. Photography is something you get immersed in. I loose myself in shooting and all my worries and daily stresses melt away with every photo that everytime I hold my camera, it excites my whole being and there is joy in the thought that I have accomplished something that I can share.</p><br />
+    <!-- End #wrappers -->
+    <!-- Switcher -->
+    <div id="custumize-style">
+
+        <!--<h2>Style Selector<a href="#" class="switcher"><span class="changebutton"><i class="fa fa-cog fa-spin"></i></span></a></h2>-->
+
+        <h1>Layout Color Switcher</h1>
+        <a href="#" class="switcher"><span class="changebutton"><i class="fa fa-cog fa-spin"></i></span></a>
+
+        <div class="switcher_content">
+            <p>Choose one color below to change main layout color. You can apply more styles in theme options.</p>
+
+            <div>
+                <h3>Skins Colors</h3>
+                <ul class="colors-style" id="color1">
+                    <li><a href="#" class="color_1"></a></li>
+                    <li><a href="#" class="color_2"></a></li>
+                    <li><a href="#" class="color_3"></a></li>
+                    <li><a href="#" class="color_4"></a></li>
+                    <li><a href="#" class="color_5"></a></li>
+                    <li><a href="#" class="color_6"></a></li>
+                    <li><a href="#" class="color_7"></a></li>
+                    <li><a href="#" class="color_8"></a></li>
+                    <li><a href="#" class="color_9"></a></li>
+                    <li><a href="#" class="color_10"></a></li>
+                    <li><a href="#" class="color_11"></a></li>
+                    <li><a href="#" class="color_12"></a></li>
+                    <li><a href="#" class="color_13"></a></li>
+                    <li><a href="#" class="color_14"></a></li>
+                    <li><a href="#" class="color_15"></a></li>
+                    <li><a href="#" class="color_16"></a></li>
+                    <li><a href="#" class="color_17"></a></li>
+                    <li><a href="#" class="color_18"></a></li>
+                    <li><a href="#" class="color_19"></a></li>
+                    <li><a href="#" class="color_20"></a></li>
+                    <li><a href="#" class="color_21"></a></li>
+                    <li><a href="#" class="color_22"></a></li>
+                    <li><a href="#" class="color_23"></a></li>
+                    <li><a href="#" class="color_24"></a></li>
+                    <li><a href="#" class="color_25"></a></li>
+                    <li><a href="#" class="color_26"></a></li>
+                    <li><a href="#" class="color_27"></a></li>
+                    <li><a href="#" class="color_28"></a></li>
+                    <li><a href="#" class="color_29"></a></li>
+                    <li><a href="#" class="color_30"></a></li>
+                </ul>
+            </div>
+
+            <div id="button-reset"><a href="#" class="button color green boxed">Reset</a></div>
+
+        </div>
+
+
     </div>
+    <!-- End Switcher -->
+    <!-- jquery | jQuery 1.11.0 -->
+    <!-- Credits: http://jquery.com -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 
+    <!-- Js | jquery.ui.effect.js -->
+    <!-- Credits: https://jqueryui.com/effect -->
+    <script type="text/javascript" src="js/jquery.ui.effect.min.js"></script>
 
-    <script type="text/javascript" src="js/avt_standard.js"></script>
-    <script type="text/javascript" src="js/avt_slider.js"></script>
-    <script type="text/javascript" src="js/avt_menu_side.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("img.lazy").lazyload();
-        });
-    </script>
-    <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    <!-- Js | bootstrap -->
+    <!-- Credits: http://getbootstrap.com -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    ga('create', 'UA-64677475-8', 'auto');
-    ga('send', 'pageview');
+    <!-- Js | jquery.cookie -->
+    <!-- Credits: https://github.com/carhartl/jquery-cookie -->
+    <script type="text/javascript" src="js/jsSwitcher/jquery.cookie.js"></script>
 
-    </script>
+    <!-- Js | switcher -->
+    <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+    <script type="text/javascript" src="js/jsSwitcher/switcher.js"></script>
+
+    <!-- Js | nicescroll.js -->
+    <!-- Credits: http://areaaperta.com/nicescroll -->
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+
+    <!-- jquery | portfolio -->
+    <!-- Credits: http://www.mixitup.io -->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+    <!-- jquery | prettyPhoto -->
+    <!-- Credits: http://www.no-margin-for-errors.com/ -->
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- Js | gmaps -->
+    <!-- Credits: http://maps.google.com/maps/api/js?sensor=true-->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/gmaps.min.js"></script>
+
+    <!-- Js | Js -->
+    <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/analytics.js"></script>
 </body>
 </html>
