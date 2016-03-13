@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Adonis Tividad Photography">
+<meta name="keywords" content="adonis,tividad,photography,programmer,developer,software,engineer,system,web">
+<meta name="author" content="Adonis Villamor Tividad">
+
+<title>Adonis Tividad Photography</title>
+<link rel="shortcut icon" href="img/avticon.ico">
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<link rel="stylesheet" href="css/avt_standard.css"> 
+<link rel="stylesheet" href="css/avt_slider.css"> 
+<link rel="stylesheet" href="css/avt_menu_side.css"> 
+
+</head>
+<body oncontextmenu="return false">
+
+	<div id="bg"><a href="#" class="nextImageBtn" title="next"></a><a href="#" class="prevImageBtn" title="previous"></a><img id="bgimg" src="img/@CloudyMorning.jpg" width="1680" height="1050" alt="Cloudy Morning" title="Cloudy Morning"/></div>
+
+	<div id="preloader"><img src="img/ajax-loader_dark.gif" width="32" height="32" /></div>
+	<div id="img_title"></div>
+	<div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"><img src="img/toolbar_fs_icon.png" width="50" height="50"  /></a></div>
+	<div id="thumbnails_wrapper">
+	<div id="outer_container">
+	<div class="thumbScroller">
+		<div class="container">
+			<?php
+			$i=0;
+			foreach (glob("img/@*.jpg") as $filename) {
+			    //echo "$filename size " . filesize($filename) . "\n";
+			    $title=str_replace(".jpg","",str_replace("img/@","",$filename));
+			    $thumb=str_replace("img/@","img/thumb_@",$filename);
+			    //echo "<div class='content'><div><a id='ref$i' href='$filename'><img id='img$i' src='$filename' style='height:50px;' title='$title' alt='$title' class='thumb' /></a></div></div>";
+			    echo "<div class='content lazy'><div><a id='ref$i' href='$filename'><img id='img$i' src='$thumb' style='height:50px;'  title='$title' alt='$title' class='thumb' /></a></div></div>";
+			     
+			    $i++;
+			}
+			?>
+	<!--  		<div class='content'><div><a id='ref$i' href='https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/88833041/de84f0cc1f8b46a446dd778ebdb42d79b40dd9a9/2048.jpg'><img id='img$i' src='https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/88833041/de84f0cc1f8b46a446dd778ebdb42d79b40dd9a9/2048.jpg' style='height:50px;'  title='$title' alt='$title' class='thumb' /></a></div></div> -->
+	
+			
+		</div>
+	</div>
+	</div>
+	</div>
+
+	<div id="left_side" > 
+		<label id="author" class="font-large text-vertical">ADONIS&nbsp;&nbsp;TIVIDAD</label>
+		<span id="position_side" class="font-smallest color-title text-vertical">TRAVEL&nbsp;&nbsp;PHOTOGRAPHER</span>
+	</div>
+	<div id="top_left" > 
+		<span id="firstname" class="font-largest center">ADONIS</span>
+		<span id="lastname" class="font-largest center">TIVIDAD</span>
+		<span id="position" class="font-smallest color-title center">TRAVEL&nbsp;PHOTOGRAPHER</span>
+			
+		<div class="nav-menu">
+			<nav>
+				<ul>
+					<li id="home"><a class="active" href="#">HOME</a></li>
+<!-- 					<li id="favorites"><a href="#sec_favorites" >FAVORITES</a></li> -->
+<!-- 					<li id="landscapes"><a href="#sec_landscapes">LANDSCAPES</a></li> -->
+<!-- 					<li id="portraits"><a href="#sec_portraits">PORTRAITS</a></li> -->
+					<li id="aboutme"><a href="#sec_aboutme">ABOUT ME</a></li>
+<!-- 					<li id="reachme"><a href="#sec_reachme">REACH ME</a></li> -->
+				</ul>
+			</nav>
+		</div>
+		<br/>
+		<div class="social-media">
+			<a class="social-icons" href="tel:+971509608995" title="Phone" alt="Phone"><img src="img/icon-phone.png"/></a>
+			<a class="social-icons" href="mailto:avtividad@yahoo.com" title="Email" alt="Email"><img src="img/icon-email.png"/></a>
+			<a class="social-icons" href="https://www.facebook.com/adonis.tividad" title="Facebook" alt="Facebook"><img src="img/icon-fb.png"/></a>
+<!-- 			<a class="social-icons" href="https://www.facebook.com/adonis.tividad" title="LinkedIn" alt="LinkedIn"><img src="img/icon-linkedin.png"/></a> -->
+		</div>
+	</div> 
+	<div id="sec_aboutme" class="section"> 
+	    <a class="section-close" title="Close" alt="close"><img src="img/close.png"/></a>
+		<span class="font-medium color-title">ABOUT ME</span>
+		<p>Being a photographer is totally awesome. There are many reasons why but I will share with you my top 3 or 3 reasons why I am a photographer.</p><br/>
+		<p>First, I wanted to capture a memory that I can have forever. In the case of my only son and only child whom my wife and I were blessed after eight long years, to capture the memories of Auric's growing years through photography became a passion. Every smile, every tear, every laughter, at play or asleep, all these and more is a moment that will pass but will forever be retained.</p><br/>
+		<p>Secondly, I appreciate the beauty that is all around me. Everyday is filled with it in the most ordinary or unexpected places, from the most simple creation of God to the most complex ones. It is the awesomeness and greatness of God that has inspired me to capture his work of art.</p><br/>
+		<p>Thirdly, I lose all my worries. Photography is something you get immersed in. I loose myself in shooting and all my worries and daily stresses melt away with every photo that everytime I hold my camera, it excites my whole being and there is joy in the thought that I have accomplished something that I can share.</p><br/>
+	</div> 
+	
+	
+	<script type="text/javascript" src="js/avt_standard.js"></script>
+	<script type="text/javascript" src="js/avt_slider.js"></script>
+	<script type="text/javascript" src="js/avt_menu_side.js"></script> 
+	<script type="text/javascript">
+		$(function() {
+		    $("img.lazy").lazyload();
+		});
+	</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-64677475-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+</body>
+</html>
